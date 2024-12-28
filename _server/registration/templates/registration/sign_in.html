@@ -3,20 +3,15 @@
 {% block content %}
 <form action="/registration/sign_in/" method="post">
   {% csrf_token %}
-  <div>
-    <label>
-      Email
-      <input type="email" name="email">
-    </label>
-  </div>
-  <div>
-    <label>
-      Password
-      <input type="password" name="password">
-    </label>
-  </div>
+  <div class="main">
+    <h2>Log In</h2>
+    <input type="email" name="email" placeholder="Enter your email">
+    <input type="password" name="password" placeholder="Enter your password">
+
   <button>Sign In</button>
 
 </form>
 <a href="/registration/sign_up/">Create New Account</a>
+</div>
+
 {% endblock %}

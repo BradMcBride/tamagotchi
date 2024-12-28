@@ -26,3 +26,17 @@ This application is a hybrid MPA and SPA. It reuses all of the login stuff that 
 
 ## Using this project for future classes/personal projects
 Many students in the past have chosen to use this starter app template for projects in other classes like CS3450 and for personal projects. I strongly encourage you to do so! Please check with your other instructors before you use this project as a starting point for their classes. You may also want to add your name to the author field in the `pyproject.toml` file.
+
+
+
+
+# Sources:
+Health Bar
+https://verpex.com/blog/website-tips/how-to-style-a-progress-bar-using-css
+
+
+Pngs and Gifs
+https://www.tumblr.com/a-little-ray-of-fantasy/614558138124943360/%E5%BA%AD%E5%85%88%E3%81%AE%E9%A2%A8%E6%99%AF
+https://www.pinterest.com/pin/183943966022302210/
+https://www.reddit.com/r/PixelArt/comments/i2x94p/graveyard/
+https://www.reddit.com/r/PixelArt/comments/97i5y1/ccocsnowy_gravestones/

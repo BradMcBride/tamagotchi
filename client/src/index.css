@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #e5e8fe;
   text-decoration: inherit;
 }
 a:hover {
@@ -40,6 +40,7 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
+  margin: 20px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -54,6 +55,20 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+button[value="delete"]:hover{
+  border-color: #ff6464;
+
+}
+input{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #363636;
+  transition: border-color 0.25s;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -66,4 +81,68 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+.image-container{
+  width: 100px;
+  height: 100px;
+}
+.stat-container{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.bar-container{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: flex-end;
+}
+.bar-container-pet{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+}
+.pet-image{
+  width:600px;
+}
+.pet-image[value="false"]{
+  filter: brightness(20%);
+}
+/* Source:  https://verpex.com/blog/website-tips/how-to-style-a-progress-bar-using-css*/
+progress[value] {
+  --w: 200px; /* the width*/
+  --color:  /* the progress color */
+    linear-gradient(90deg,#ff6161,#1ecd1e) 0/var(--w);
+  --background: lightgrey; /* the background color */
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: var(--w);
+  margin: 0 10px;
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 8px 0;
 }
